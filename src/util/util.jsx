@@ -1,4 +1,5 @@
-const endpoint = "http://localhost:3001/"
+// const endpoint = "http://localhost:3001/"
+const endpoint = "https://alphax-t-section-backend.onrender.com/"
 export function insertNote(idx, lat, long, observation) {
     // console.log(observation.trim() === "")
     if (observation === "loading...") return

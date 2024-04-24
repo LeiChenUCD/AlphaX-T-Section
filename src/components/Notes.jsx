@@ -52,7 +52,7 @@ function Notes(props) {
             })}
         </div>
 
-        <div className="left right" style={{minHeight: "300px", outline: "0px solid transparent"}} contentEditable="true" id="note">
+        <div className="left right" style={{minHeight: "300px", outline: "0px solid transparent"}} id="note">
             
         </div>
         
