@@ -36,7 +36,12 @@ function Notes(props) {
 
     return <div style={{width: "600px", display: "flex", flexDirection: "column", marginTop: "10px"}}>
 
-        
+        Please exit the website after finishing your set assigned within the parenthesis.<br></br>
+        The initial submission might be slow, but subsequent ones should work normally.<br></br>
+        If you think it is a T-Section, press "Yes", then press "Submit".<br></br>
+        If you don't think it is a T-Section, press "No", then press "Submit".<br></br>
+        If you are unsure about it, press "Not Sure", then press "Submit".<br></br>
+        <div style={{height: "5px"}}></div>
         <div style={{className: "top", height: "30px"}} className="centerText left bottom right top">
             {selectedAddr + 1} ({start + 1}-{end})
             </div>
@@ -52,7 +57,7 @@ function Notes(props) {
             })}
         </div>
 
-        <div className="left right" style={{minHeight: "300px", outline: "0px solid transparent"}} id="note">
+        <div className="left right" style={{minHeight: "30px", outline: "0px solid transparent"}} id="note">
             
         </div>
         
@@ -62,12 +67,12 @@ function Notes(props) {
             className={`${hideClass}`} 
             onClick={async e => {
                 e.preventDefault();
-                document.getElementById("submit").innerHTML = "Submitting..."
                 // if (authorName.trim() === "") {
                 //     alert("please enter your name")
                 //     return
                 // }
                 if (document.getElementById("note").innerHTML !== "") {
+                    document.getElementById("submit").innerHTML = "Submitting..."
                     // setSelectedAddr(selectedAddr + 1)
                     const houseEntry = houses[selectedAddr + 1]
                     const obs = document.getElementById("note").innerHTML

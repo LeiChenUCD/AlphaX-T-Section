@@ -76,6 +76,20 @@ function MainView() {
         <h1>
             Is it a T-Section?
         </h1>
+        <a href="https://patch.com/new-york/chelsea-ny/feng-shui-t-junction-good-or-bad" 
+        target="_blank" 
+        rel="noreferrer"
+        style={{marginBottom: "10px", width: "100%"}}>
+            What is a T-Section?
+        </a>
+        
+        <a href="https://zhuanlan.zhihu.com/p/420633758#:~:text=%E8%B7%AF%E5%86%B2%E6%98%AF%E6%8C%87%E6%88%BF%E5%AD%90,%E5%86%B2%E7%85%9E%E7%9A%84%E9%A3%8E%E6%B0%B4%E7%85%9E%E3%80%82" 
+        target="_blank" 
+        rel="noreferrer"
+        style={{marginBottom: "10px", width: "100%"}}>
+            什么是路冲?
+        </a>
+
         <Map houseEntry={houseEntry}
         sortedSubset={sortedSubset}
         center={center}
